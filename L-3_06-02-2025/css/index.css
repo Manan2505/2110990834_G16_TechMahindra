@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.mini-banner{
+    /* display: flex;
+    
+    justify-content: space-between; */
+    
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+.container{
+    padding: 36px 59px;
+}
+
+.logo img {
+    height: 26px;
+    width: auto;
+  }
+
+.btn {
+    /* border: 2px solid black; */
+    border-radius: 30px;
+    padding: 17px 64px;
+    font-weight: 700;
+  }
+
+  .hero-section {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  
+ .hero-desc {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .hero-desc p {
+    margin: 25px 0;
+  }
+ .hero-section-img {
+    /* border: 2px solid black; */
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ .hero-section-img img {
+    /* border: 2px solid green; */
+    width: 70%;
+  }
+  
+  .count-section{
+    display: flex;
+    /* border: 2px solid red; */
+    width: 70%;
+    margin:auto;
+    justify-content: space-around;
+  }
+  .communities-formed{
+    /* border: 2px solid black; */
+  }
+  .messages-sent{
+    /* border: 2px solid black; */
+  }
+
+  .info-section-one{
+    /* border: 2px solid red; */
+    display: flex;
+  }
+  .info-desc-one{
+width: 50%;
+/* border: 2px solid green; */
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+justify-content: center;
+  }
+  .info-img-one{
+    width: 50%;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .info-img-one img{
+    width: 50%;
+  }
+
+  .info-section-two{
+    display: flex;
+    /* border: 2px solid red; */
+  }
+  .info-desc-two{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+
+    
+  }
+  .info-img-two{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+  }
+  .info-img-two img{
+    width: 50%;
+  }
