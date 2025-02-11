@@ -85,15 +85,23 @@
     // z();
 //-------------------------------------------------------
 //closure example-3
-    var count=0;
-    function increment(){
-        count=count+1;
-        return count;
+    //  var count=9;
+    function Counter(){
+        var count=0;
+         this.increment=function(){
+            count++;
+            console.log(count)
+        }
+        this.decrement=function(){
+            count--;
+            console.log(count)
+        }
     }
-    console.log(increment());
-    console.log(increment());
-    console.log(increment());
-    console.log(count)
-     </script>
+    // var a=increment();
+    // a();
+    var counter1=new Counter();
+    counter1.increment;
+    // this.increment.plus
+    </script>
 </body>
 </html>
