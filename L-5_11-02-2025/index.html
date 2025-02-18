@@ -27,22 +27,25 @@
     //         console.log(30);
     //     },2000)
     //     console.log(6);
+    //     setTimeout(()=>{
+    //         console.log(9)
+    //     },3000)
      //---------------------------------------------------------  
         //find output 
     // for(var i=1;i<=6; i++){
-    //     function fun(j){
+    //     function fun(){
     //         setTimeout(()=>{
-    //         console.log(j)
+    //         console.log(i)
     //     },1000);
     //     }
-    //     fun(i); 
+    //     fun(); 
     // }  
 
         //------------------------------------------------------
         //find output
     // function fun(j){
     //     setTimeout(()=>{
-    //         // console.log(j)
+    //         console.log(j)
     //     },1000)
     // }
     // for(var i=1; i<=6; i++){
@@ -102,6 +105,21 @@
     var counter1=new Counter();
     counter1.increment;
     // this.increment.plus
+
+    //----------------------------------------------------
+    //closure example - 4
+//     function makeAdder(x) {
+//   return function (y) {
+//     return x + y;
+//   };
+// }
+
+// const add5 = makeAdder(5);
+// const add10 = makeAdder(10);
+// console.log(add5)
+// console.log(add10)
+// console.log(add5(2)); 
+// console.log(add10(2));
     </script>
 </body>
 </html>
