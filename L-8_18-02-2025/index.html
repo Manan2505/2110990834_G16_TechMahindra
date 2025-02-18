@@ -91,6 +91,40 @@
         // console.log(areas)
         // console.log(circumferences)
         
+        
+
+
+        // const data=[
+        //     {
+        //         fName:"Rahul",
+        //         lName:"Singh",
+        //         age:22
+        //     },
+        //     {
+        //         fName:"Manan",
+        //         lName:"Arora",
+        //         age:23
+        //     },
+        //     {
+        //         fName:"Manan",
+        //         lName:"Arora",
+        //         age:23
+        //     },
+        //     {
+        //         fName:"Rajat",
+        //         lName:"Kumar",
+        //         age:29
+        //     }
+        // ]
+        // let combinedData=data.map(d=>d.fName+" "+d.lName)
+        // console.log(combinedData)
+
+        let filterData=data.filter((d)=>{
+            if(d.age>25){
+                return d.fName;
+            }
+        })
+        console.log(filterData);
     </script>
 </body>
 </html>
