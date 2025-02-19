@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //reduce
+        // let arr=[1,2,3,4,5];
+        // let sum=arr.reduce(function(acc,curr){
+        //     acc=acc+curr;
+        //     return acc;
+        // },0) //0 is the initial value for accumulator.
+        // console.log(sum)
+//-----------------------------------------------------------------------------------
+//find the count where age is similar 
+        // const arr=[
+        //     {
+        //         fName:"Rahul",
+        //         lName:"Singh",
+        //         age:22
+        //     },
+        //     {
+        //         fName:"Manan",
+        //         lName:"Arora",
+        //         age:23
+        //     },
+        //     {
+        //         fName:"Manan",
+        //         lName:"Arora",
+        //         age:23
+        //     },
+        //     {
+        //         fName:"Rajat",
+        //         lName:"Kumar",
+        //         age:29
+        //     }
+        // ]
+        
+//      const ageCount = arr.reduce((acc, person) => {
+//     acc[person.age] = (acc[person.age] || 0) + 1;
+//     return acc;
+// }, {});
+
+// console.log(ageCount);
+//-----------------------------------------------------------------------------
+//find max using reduce method
+// let dataMap=[1,9,3,4,5,7];
+// let max=dataMap.reduce(function(acc,curr){
+//     if(curr>acc){
+//         acc=curr;
+//     }
+//     return acc;
+// },0)
+// console.log(max)
+//----------------------------------------------------------------------------
+//promises have 3 stages : pending,fulfilled,rejected.
+ function reachedRestaurant(callback){
+        console.log("REACHED");
+        setTimeout(callback,1000);
+    }
+    function tableFinding(callback){
+        console.log("TABLE FINDING");
+        setTimeout(callback,1000);
+    }
+    function menuDiscover(callback){
+        console.log("MENU DISCOVER");
+        setTimeout(callback,1000);
+    }
+    
+    function priceCheck(callback){
+        console.log("CHECKING PRICE");
+        setTimeout(callback,1000);
+    }
+    function starterOrder(callback){
+        console.log("ORDERED STARTER");
+        setTimeout(callback,1000);
+    }
+    function mainCourse(callback){
+        console.log("ORDERED MAIN COURSE");
+        setTimeout(callback,1000);
+    }
+    function desertOrder(callback){
+        console.log("ORDERED DESSERT");
+        setTimeout(callback,1000);
+    }
+    function payBill(callback){
+        console.log("DONE WITH PAYMENT");
+        // setTimeout(callback,1000);
+    }
+    
+        //promise api's : all,allsettled,race,any
+    </script>
+</body>
+</html>
