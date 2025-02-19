@@ -57,41 +57,68 @@
 // console.log(max)
 //----------------------------------------------------------------------------
 //promises have 3 stages : pending,fulfilled,rejected.
- function reachedRestaurant(callback){
-        console.log("REACHED");
-        setTimeout(callback,1000);
-    }
-    function tableFinding(callback){
-        console.log("TABLE FINDING");
-        setTimeout(callback,1000);
-    }
-    function menuDiscover(callback){
-        console.log("MENU DISCOVER");
-        setTimeout(callback,1000);
-    }
+//  function reachedRestaurant(callback){
+//         console.log("REACHED");
+//         setTimeout(callback,1000);
+//     }
+//     function tableFinding(callback){
+//         console.log("TABLE FINDING");
+//         setTimeout(callback,1000);
+//     }
+//     function menuDiscover(callback){
+//         console.log("MENU DISCOVER");
+//         setTimeout(callback,1000);
+//     }
     
-    function priceCheck(callback){
-        console.log("CHECKING PRICE");
-        setTimeout(callback,1000);
-    }
-    function starterOrder(callback){
-        console.log("ORDERED STARTER");
-        setTimeout(callback,1000);
-    }
-    function mainCourse(callback){
-        console.log("ORDERED MAIN COURSE");
-        setTimeout(callback,1000);
-    }
-    function desertOrder(callback){
-        console.log("ORDERED DESSERT");
-        setTimeout(callback,1000);
-    }
-    function payBill(callback){
-        console.log("DONE WITH PAYMENT");
-        // setTimeout(callback,1000);
-    }
-    
-        //promise api's : all,allsettled,race,any
+//     function priceCheck(callback){
+//         console.log("CHECKING PRICE");
+//         setTimeout(callback,1000);
+//     }
+//     function starterOrder(callback){
+//         console.log("ORDERED STARTER");
+//         setTimeout(callback,1000);
+//     }
+//     function mainCourse(callback){
+//         console.log("ORDERED MAIN COURSE");
+//         setTimeout(callback,1000);
+//     }
+//     function desertOrder(callback){
+//         console.log("ORDERED DESSERT");
+//         setTimeout(callback,1000);
+//     }
+//     function payBill(callback){
+//         console.log("DONE WITH PAYMENT");
+//         // setTimeout(callback,1000);
+//     }
+
+        //promise api's : all,allSettled,race,any
+        // promise.all is used to fetch multiple api's at a time, if any api fail then it will return fail at that time
+        // promise.allSettled is same as promise.all, the only difference is if any api fails, it will run all the other api's and return the working apis in promise array.
+        //promise.any return api which completed first and if all fails it will return individual error for all apis.
+        //promise.race is same as promise.any, the only difference is race will run all apis and return First come first serve order.
+
+       
+        //-----------------------------------------------------------------------
+        // promise example-1
+        // const cart=["shoes"]
+        // function createOrder(){
+        //     const myPromise=new Promise(function(resolve,reject){
+        //     if(cart.length>0){
+        //         resolve("12345")
+        //     }else{
+        //         reject(new Error("order rejected"))
+        //     }
+        // })
+        // return myPromise;
+        // }
+
+
+        // createOrder(cart).then((orderId)=>{
+        //     console.log("Order payment successfull",orderId)
+        //     return orderId;
+        // }).then((orderId)=>{
+        //     console.log("Order summary",orderId)
+        // }).catch(error=>console.log(error.message))
     </script>
 </body>
 </html>
