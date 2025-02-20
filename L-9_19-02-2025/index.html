@@ -93,9 +93,12 @@
 
         //promise api's : all,allSettled,race,any
         // promise.all is used to fetch multiple api's at a time, if any api fail then it will return fail at that time
-        // promise.allSettled is same as promise.all, the only difference is if any api fails, it will run all the other api's and return the working apis in promise array.
+
+        // promise.allSettled is same as promise.all, the only difference is if any api fails, it will run all the other api's and return the working apis in alphabetical order in promise array.
+
         //promise.any return api which completed first and if all fails it will return individual error for all apis.
-        //promise.race is same as promise.any, the only difference is race will run all apis and return First come first serve order.
+
+        //promise.race is same as promise.any, if any api fails, it will return from there.
 
        
         //-----------------------------------------------------------------------
