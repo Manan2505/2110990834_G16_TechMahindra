@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROMISES API's</title>
+</head>
+<body>
+    <script>
+            //created four promises
+            let myPromiseFromNetflix=new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    // resolve("Fetched Data From Netflix")
+                    reject(new Error("ERROR IN NETFLIX"))
+                },1000)
+            })
+            let myPromiseFromTwitter=new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    // resolve("Fetched Data From Twitter")
+                    reject(new Error("ERROR IN TWITTER"))
+                },2000)
+            })
+            let myPromiseFromGithub=new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    // resolve("Fetched Data From Github")
+                    reject(new Error("ERROR IN GITHUB"))
+                },3000)
+            })
+            let myPromiseFromHotstar=new Promise((resolve,reject)=>{
+                setTimeout(()=>{
+                    // resolve("Fetched Data From Hotstar")
+                    reject(new Error("ERROR IN HOTSTAR"))
+                },4000)
+            })
+
+            //promise.all();
+            // const dataFromAll1=Promise.all([myPromiseFromGithub,myPromiseFromHotstar,myPromiseFromNetflix,myPromiseFromTwitter]);
+            // console.log(dataFromAll1)
+
+            //promise.allSettled();
+            // const dataFromAll2=Promise.allSettled([myPromiseFromGithub,myPromiseFromHotstar,myPromiseFromNetflix,myPromiseFromTwitter]);
+            // console.log(dataFromAll2)
+
+            //promise.any();
+            // const dataFromAll3=Promise.any([myPromiseFromGithub,myPromiseFromHotstar,myPromiseFromNetflix,myPromiseFromTwitter]);
+            // console.log(dataFromAll3)
+
+            //promise.race();
+            // const dataFromAll4=Promise.race([myPromiseFromGithub,myPromiseFromHotstar,myPromiseFromNetflix,myPromiseFromTwitter]);
+            // console.log(dataFromAll4)
+        
+    </script>
+</body>
+</html>
