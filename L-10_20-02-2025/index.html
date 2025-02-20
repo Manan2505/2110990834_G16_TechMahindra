@@ -8,30 +8,30 @@
 <body>
     <script>
             //created four promises
-            let myPromiseFromNetflix=new Promise((resolve,reject)=>{
-                setTimeout(()=>{
-                    // resolve("Fetched Data From Netflix")
-                    // reject(new Error("ERROR IN NETFLIX"))
-                },1000)
-            })
-            let myPromiseFromTwitter=new Promise((resolve,reject)=>{
-                setTimeout(()=>{
-                    // resolve("Fetched Data From Twitter")
-                    // reject(new Error("ERROR IN TWITTER"))
-                },2000)
-            })
-            let myPromiseFromGithub=new Promise((resolve,reject)=>{
-                setTimeout(()=>{
-                    // resolve("Fetched Data From Github")
-                    // reject(new Error("ERROR IN GITHUB"))
-                },3000)
-            })
-            let myPromiseFromHotstar=new Promise((resolve,reject)=>{
-                setTimeout(()=>{
-                    // resolve("Fetched Data From Hotstar")
-                    // reject(new Error("ERROR IN HOTSTAR"))
-                },4000)
-            })
+            // let myPromiseFromNetflix=new Promise((resolve,reject)=>{
+            //     setTimeout(()=>{
+            //         // resolve("Fetched Data From Netflix")
+            //         // reject(new Error("ERROR IN NETFLIX"))
+            //     },1000)
+            // })
+            // let myPromiseFromTwitter=new Promise((resolve,reject)=>{
+            //     setTimeout(()=>{
+            //         // resolve("Fetched Data From Twitter")
+            //         // reject(new Error("ERROR IN TWITTER"))
+            //     },2000)
+            // })
+            // let myPromiseFromGithub=new Promise((resolve,reject)=>{
+            //     setTimeout(()=>{
+            //         // resolve("Fetched Data From Github")
+            //         // reject(new Error("ERROR IN GITHUB"))
+            //     },3000)
+            // })
+            // let myPromiseFromHotstar=new Promise((resolve,reject)=>{
+            //     setTimeout(()=>{
+            //         // resolve("Fetched Data From Hotstar")
+            //         // reject(new Error("ERROR IN HOTSTAR"))
+            //     },4000)
+            // })
 
             //promise.all();
             // const dataFromAll1=Promise.all([myPromiseFromGithub,myPromiseFromHotstar,myPromiseFromNetflix,myPromiseFromTwitter]);
@@ -49,7 +49,35 @@
             // const dataFromAll4=Promise.race([myPromiseFromGithub,myPromiseFromHotstar,myPromiseFromNetflix,myPromiseFromTwitter]);
             // console.log(dataFromAll4)
         //------------------------------------------------------------------------------------------------------
-            
+
+        //async await
+       //async function is also a promise.
+    //    async function techFunction(){
+    //     console.log("THIS IS TECH FUNCTION")
+    //    }
+    //    const store=techFunction();
+    //    store.then((res)=>{
+    //     return res;
+    //    })
+//---------------------------------------------------------------------------------------------
+       //async example
+    //    const prjSubmission=new Promise((resolve,reject)=>{
+    //     setTimeout(()=>{
+    //         resolve("SUBMITTED ");
+    //     },5000);
+    //    })
+
+    //    function prjEvaluation(){
+    //     const prjFile=prjSubmission;
+    //     console.log(prjFile); //it will print undefined during 5s.
+    //    }
+
+    // async function prjEvaluation(){
+    //     const prjFile=await prjSubmission;
+    //     console.log(prjFile); // it will not set undefined, it will wait for the file 
+    //    }
+    //    prjEvaluation();
+    //------------------------------------------------------------------------------------------
     </script>
 </body>
 </html>
