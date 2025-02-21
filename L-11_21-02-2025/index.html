@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .grand-parent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70vw;
+        height: 70vh;
+        background: beige;
+        border: 2px solid black;
+        margin: auto;
+        margin-top: 100px;
+    }
+    .grand-parent:hover{
+        background: pink;
+    }
+    .parent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        height: 70%;
+        background: red;
+        border: 2px solid black;
+    }
+    .parent:hover{
+        background: rgb(71, 22, 22);
+    }
+    .child{
+        width: 70%;
+        height: 70%;
+        background: greenyellow;
+        border: 2px solid black;
+    }
+    .child:hover{
+        background: yellow;
+    }
+</style>
+<body>
+    <!-- <div class="grand-parent">
+        <div class="parent">
+            <div class="child">
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="mainDiv">
+        <ul>
+            <li id="cs">Computer Science</li>
+            <li id="ele">Electronics</li>
+            <li id="mech">Mechanical</li>
+        </ul>
+    </div> -->
+    <div class="searchBar">
+        <span>Enter your product : </span>
+        <input type="text" id="searchbox">
+    </div>
+    <script>
+        // call(),apply() and bind()
+        // let obj={
+        //     firstName:"manan",      
+        //     lname:"arora",
+        //     // getResult:function(){
+        //     //     console.log("passed")
+        //     // }
+        // }
+        // function getName(classroom){
+        //         console.log(this.firstName+" "+this.lname+" of "+classroom)
+        //     }
+            
+            // getName.call(obj);
+            // getName.call(obj,"G16");
+
+            // getName.apply(obj);
+            // getName.apply(obj,["G16,G17"]);
+
+            // let store=getName.bind(obj,"G18")
+            // store(); // in bind we need to store and then call
+
+            //------------------------------------------------------------------------
+
+            //Event bubbling and event capturing and at target phase
+            // document.querySelector('.grand-parent').addEventListener('click',(event)=>{
+            //     console.log("Grand parent")
+            //     event.stopPropagation(); // helps to achieve target phase
+            // },false) // true gives event capturing
+            // document.querySelector('.parent').addEventListener('click',(event)=>{
+            //     console.log(" parent")
+            //     event.stopPropagation();
+            // },false)
+            // document.querySelector('.child').addEventListener('click',(event)=>{
+            //     console.log("child")
+            //     event.stopPropagation();
+            // },false)
+            //---------------------------------------------------------------------------------
+            //read about document fragment/event delegation
+            // document.querySelector('#cs').addEventListener('click',()=>{
+            //     window.location.href="http://127.0.0.1:5501/L-11_21-02-2025/cs"
+            // })
+            //---------------------------------------------------------------------------------------
+            //debouncing in js :- it is used for api optimisation
+            // document.querySelector('#searchbox').addEventListener('input',debouncingFunction);
+            // let whichCall=0;
+            // let time;
+            // function fetchData(){
+            //     console.log("FETCHING ",whichCall++)
+            // }
+            // function debouncingFunction(){
+            //     clearTimeout(time)
+            //      time=setTimeout(()=>{
+            //         fetchData();
+            //     },2000)
+            // }
+            //--------------------------------------------------------------------------------------
+            //Task
+            
+    </script>
+</body>
+</html>
