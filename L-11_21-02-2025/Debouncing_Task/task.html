@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="searchBar">
+        <span>Enter your product : </span>
+        <input type="text" id="searchbox">
+        <div id="results">
+
+        </div>
+    </div>
+    <script>
+        var time;
+        document.querySelector('#searchbox').addEventListener('input',(event)=>{
+            clearTimeout(time);
+            time=setTimeout(async()=>{
+                let result=await fetchData(event.target.value)
+               displayResults(result);
+            },2000)
+        })
+        async function fetchData(value){
+            let fetchApi=await fetch("https://api.chucknorris.io/jokes/categories")
+            let jsonFormat=await fetchApi.json();
+            let filtered=jsonFormat.filter((data)=>{
+                 return data.includes(value.toLowerCase());
+            })
+            return filtered;
+        }
+        //display results on html page
+        function displayResults(data) {
+        let resultDiv = document.querySelector('#results');
+        if (data.length === 0) {
+            resultDiv.innerHTML = `<p>No categories found.</p>`;
+            return;
+        }
+        resultDiv.innerHTML = data.map(category => `<p>${category}</p>`).join('');
+    }
+    </script>
+</body>
+</html>

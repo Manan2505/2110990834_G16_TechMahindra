@@ -1,0 +1,19 @@
+.prj-work{
+    margin-top: 40px;
+    display: flex;
+    /* border: 2px solid red; */
+}
+.prj-work img{
+    border: 2px solid black;
+    border-radius: 100px;
+}
+.prj-desc{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid green; */
+    justify-content: center;
+    align-items: center;
+}
+.prj-desc a{
+    font-size: 30px;
+}

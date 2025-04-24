@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // HOF
+        // function x(){
+        //     console.log("I am X")
+        // }
+        // function y(args){
+        //     console.log("I am Y")
+        //     args();
+        // }
+        // y(x); //y is higher order function and x is callback funtion
+
+        
+        // data=[2,4,6,8,10];
+        // function to double every element of data
+        // const calculateDoubleData=function(data){
+        //     var output=[];
+        //     for(let i=0; i<data.length; i++){
+        //         output.push(data[i]*2);
+        //     }
+        //     return output;
+        // }
+        // let x=calculateDoubleData(data);
+        // console.log("DOUBLED DATA -> "+x)
+
+        // // function to half every element of data
+        // const halfData=function(data){
+        //     var output=[];
+        //     for(element in data){
+        //         output.push(data[element]/2);
+        //     }
+        //     return output;
+        // }
+        // console.log("HALFED DATA -> "+halfData(data))
+
+        // // function to add ten in every element of data
+        // const addTen=function(data){
+        //     var output=[];
+        //     for(element in data){
+        //         output.push(data[element]+10);
+        //     }
+        //     return output;
+        // }
+        // console.log("ADDED TEN -> "+addTen(data))
+
+        //optimal way for above codes is below
+        // const calculateData=function(data,callback){
+        //     console.log("We are inside calculateData");
+        //     var output[];
+        //     for(element in data){
+        //         output.push(callback(data[element]));
+        //     }
+        //     return output;
+        // }
+        // console.log(calculateData(data,halfData));
+
+        // console.log(data.map(calculateDoubleData)) //same output
+
+        // HW: learn about Array.prototype. Below code also known as polyfill of map feature of js.
+        // Array.prototype.mapp=function(logic){
+        //     var output=[];
+        //     for(let i=0; i<this.length; i++){
+        //         output.push(this[i]);
+        //     }
+        //     return output;
+        // }
+        // console.log("MAPP ",data.mapp(calculateDoubleData));
+
+        // creating functions and using as map
+        // data=[2,9,16,42,71]
+        // function radius(e){
+        //     return e/2;
+        // }
+        // function area(e){
+        //     return  Math.PI * e * e;
+        // }
+        // function circumference(e){
+        //     return 2*Math.PI*e;
+        // }
+        // const rad=data.map(ele=>radius(ele))
+        // const areas=data.map(ele=>area(ele));
+        // const circumferences=data.map(ele=>circumference(ele));
+        // console.log(rad)
+        // console.log(areas)
+        // console.log(circumferences)
+        
+        
+
+
+        // const data=[
+        //     {
+        //         fName:"Rahul",
+        //         lName:"Singh",
+        //         age:22
+        //     },
+        //     {
+        //         fName:"Manan",
+        //         lName:"Arora",
+        //         age:23
+        //     },
+        //     {
+        //         fName:"Manan",
+        //         lName:"Arora",
+        //         age:23
+        //     },
+        //     {
+        //         fName:"Rajat",
+        //         lName:"Kumar",
+        //         age:29
+        //     }
+        // ]
+        // let combinedData=data.map(d=>d.fName+" "+d.lName)
+        // console.log(combinedData)
+
+        let filterData=data.filter((d)=>{
+            if(d.age>25){
+                return d.fName;
+            }
+        })
+        console.log(filterData);
+    </script>
+</body>
+</html>

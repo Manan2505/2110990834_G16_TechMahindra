@@ -1,0 +1,1 @@
+Built a fully responsive website named "Huddle" using HTML and CSS only.

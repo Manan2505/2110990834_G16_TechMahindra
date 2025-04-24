@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROMISES API's</title>
+</head>
+<body>
+    <script>
+            //created four promises
+            // let myPromiseFromNetflix=new Promise((resolve,reject)=>{
+            //     setTimeout(()=>{
+            //         // resolve("Fetched Data From Netflix")
+            //         // reject(new Error("ERROR IN NETFLIX"))
+            //     },1000)
+            // })
+            // let myPromiseFromTwitter=new Promise((resolve,reject)=>{
+            //     setTimeout(()=>{
+            //         // resolve("Fetched Data From Twitter")
+            //         // reject(new Error("ERROR IN TWITTER"))
+            //     },2000)
+            // })
+            // let myPromiseFromGithub=new Promise((resolve,reject)=>{
+            //     setTimeout(()=>{
+            //         // resolve("Fetched Data From Github")
+            //         // reject(new Error("ERROR IN GITHUB"))
+            //     },3000)
+            // })
+            // let myPromiseFromHotstar=new Promise((resolve,reject)=>{
+            //     setTimeout(()=>{
+            //         // resolve("Fetched Data From Hotstar")
+            //         // reject(new Error("ERROR IN HOTSTAR"))
+            //     },4000)
+            // })
+
+            //promise.all();
+            // const dataFromAll1=Promise.all([myPromiseFromGithub,myPromiseFromHotstar,myPromiseFromNetflix,myPromiseFromTwitter]);
+            // console.log(dataFromAll1)
+
+            //promise.allSettled();
+            // const dataFromAll2=Promise.allSettled([myPromiseFromGithub,myPromiseFromHotstar,myPromiseFromNetflix,myPromiseFromTwitter]);
+            // console.log(dataFromAll2)
+
+            //promise.any();
+            // const dataFromAll3=Promise.any([myPromiseFromGithub,myPromiseFromHotstar,myPromiseFromNetflix,myPromiseFromTwitter]);
+            // console.log(dataFromAll3)
+
+            //promise.race();
+            // const dataFromAll4=Promise.race([myPromiseFromGithub,myPromiseFromHotstar,myPromiseFromNetflix,myPromiseFromTwitter]);
+            // console.log(dataFromAll4)
+        //------------------------------------------------------------------------------------------------------
+
+        //async await
+       //async function is also a promise.
+    //    async function techFunction(){
+    //     console.log("THIS IS TECH FUNCTION")
+    //    }
+    //    const store=techFunction();
+    //    store.then((res)=>{
+    //     return res;
+    //    })
+//---------------------------------------------------------------------------------------------
+       //async example
+    //    const prjSubmission=new Promise((resolve,reject)=>{
+    //     setTimeout(()=>{
+    //         resolve("SUBMITTED ");
+    //     },5000);
+    //    })
+
+    //    function prjEvaluation(){
+    //     const prjFile=prjSubmission;
+    //     console.log(prjFile); //it will print undefined during 5s.
+    //    }
+
+    // async function prjEvaluation(){
+    //     const prjFile=await prjSubmission;
+    //     console.log(prjFile); // it will not set undefined, it will wait for the file 
+    //    }
+    //    prjEvaluation();
+    //------------------------------------------------------------------------------------------
+    //find output
+    // console.log("CLass start");
+    // const prjSubmission=new Promise((resolve,reject)=>{
+    //     setTimeout(()=>{
+    //         resolve("SUBMITTED")
+    //     },5000)
+    // })
+    // async function abc(){
+    //     console.log("Attendace Viva");
+    //     const get=await prjSubmission;
+    //     console.log("FETCHED")
+    // }
+    // console.log("END")
+
+    //-------------------------------------------------------
+    // given task    
+    // console.log("class start");
+    //     let kuberFileWriting=new Promise((resolve,reject)=>{
+    //         setTimeout(()=>{
+    //             resolve("KUBER HAS WRITTEN THE FILE")
+    //         },4000)
+    //     })
+    //     let evaluation=new Promise((resolve,reject)=>{
+    //         setTimeout(()=>{
+    //             resolve("EVALUATION OF FILE")
+    //         },4000)
+    //     })
+    //     async function abc(){
+    //         // console.log("MARK ATTENDACE");
+    //         console.log(await kuberFileWriting) ;
+    //         console.log(await evaluation) ;
+    //         console.log("CLASS END");
+    //     }
+    //     abc();
+    //     console.log("MARK ATTENDACE");
+        //------------------------------------------------------------------
+        // async function abc(){
+        //try{
+        //     const get=await fetch("add dummy link");
+        //     const data=get.json();
+        //     return data;
+        // }
+       // }catch(error){
+       //console.log(error)
+       //}
+        // const result=abc();
+        // result.then((res)=>{
+        //     console.log(res)
+        // })
+
+        //=----------------------------------------------------------------------
+        // TASK IS GIVEN : deadline is 24-02-2025
+    </script>
+</body>
+</html>

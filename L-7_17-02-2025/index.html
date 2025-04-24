@@ -1,0 +1,95 @@
+<!--today's learning : pyramid of doom -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button id="btn1">BUTTON</button>
+    <button id="btn">BUTTON_TWO</button> -->
+    <script>  
+    //call back function
+
+    // function a(){
+    //     console.log("Function a")
+    // }
+    // function b(x){
+    //     console.log("Function b");
+    //     //x();
+    // }
+    // b(a());
+
+    //-----------------------------------------------------
+    //HW :- To create closures of addEventListener
+    // var count=0;
+    // let button=document.querySelector('#btn1');
+    // button.addEventListener('click',()=>{
+    //     return function(){
+    //         console.log(count++)
+    //     }
+    // })
+
+    // let button2=document.querySelector('#btn');
+    // button.addEventListener('click',()=>{
+    //     return function(){
+    //         console.log(count++)
+    //     }
+    // })
+
+
+    //--------------------------------------------
+    //chaining the call back(pyramid of doom)
+
+    // function reachedRestaurant(callback){
+    //     console.log("REACHED");
+    //     setTimeout(callback,1000);
+    // }
+    // function tableFinding(callback){
+    //     console.log("TABLE FINDING");
+    //     setTimeout(callback,1000);
+    // }
+    // function menuDiscover(callback){
+    //     console.log("MENU DISCOVER");
+    //     setTimeout(callback,1000);
+    // }
+    
+    // function priceCheck(callback){
+    //     console.log("CHECKING PRICE");
+    //     setTimeout(callback,1000);
+    // }
+    // function starterOrder(callback){
+    //     console.log("ORDERED STARTER");
+    //     setTimeout(callback,1000);
+    // }
+    // function mainCourse(callback){
+    //     console.log("ORDERED MAIN COURSE");
+    //     setTimeout(callback,1000);
+    // }
+    // function desertOrder(callback){
+    //     console.log("ORDERED DESSERT");
+    //     setTimeout(callback,1000);
+    // }
+    // function payBill(callback){
+    //     console.log("DONE WITH PAYMENT");
+    //     // setTimeout(callback,1000);
+    // }
+
+    // reachedRestaurant(()=>{
+    //     menuDiscover(()=>{
+    //         priceCheck(()=>{
+    //             starterOrder(()=>{
+    //                 menuDiscover(()=>{
+    //                     desertOrder();
+    //                 })
+    //             })
+    //         })
+    //     });
+    // })
+    
+    // HW : garbage collector : mark and sweep algo,inlining,copy elision,inline caching
+   console.log(isNaN("123"));
+</script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Question - 1 “Counter Module Using Closures”
+        function createCounter(){
+            var count=0;
+            this.increment=function(){
+                count++;
+                return count;
+            }
+            this.decrement=function(){
+                count--;
+                return count;
+            }
+            getCount=function(){
+                return count;
+            }
+        }
+        //creating the instance
+        let obj=new createCounter();
+        console.log(obj.increment()); //1
+
+        let obj2=new createCounter();
+        console.log(obj2.decrement()); //-1
+
+        console.log(getCount()) // returns count of current object(obj2)
+//--------------------------------------------------------------------------------------------------
+        // Question - 2 “Memoized Fibonacci Function Using Closures”
+            const memoizedFibonacci=()=>{
+                var cache={};
+                return function fibo(n){
+                    if(n in cache){
+                        return cache[n];
+                    }
+                    if(n<=1){
+                        return n;
+                    }
+                    cache[n]=fibo(n-1)+fibo(n-2);
+                    return cache[n];
+                } 
+            }
+                let ans=memoizedFibonacci();
+                console.log(ans(7)) //13
+    </script>
+</body>
+</html>

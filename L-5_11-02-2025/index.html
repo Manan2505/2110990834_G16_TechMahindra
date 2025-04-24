@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- //setInterval -->
+     <script>
+           //find output
+    //     function two(){
+    //         return 2; 
+    //     }
+    //     console.log(1);
+    //     console.log(two());
+    //    let l1= setInterval(()=>{
+    //         clearInterval(l1);
+    //         clearInterval(l2)
+    //         console.log(3)
+    //     },3000)
+    //     function twofour(){
+    //         return 24
+    //     }
+    //     console.log(twofour());
+    //    let l2= setInterval(()=>{
+    //         console.log(30);
+    //     },2000)
+    //     console.log(6);
+    //     setTimeout(()=>{
+    //         console.log(9)
+    //     },3000)
+     //---------------------------------------------------------  
+        //find output 
+    // for(var i=1;i<=6; i++){
+    //     function fun(){
+    //         setTimeout(()=>{
+    //         console.log(i)
+    //     },1000);
+    //     }
+    //     fun(); 
+    // }  
+
+        //------------------------------------------------------
+        //find output
+    // function fun(j){
+    //     setTimeout(()=>{
+    //         console.log(j)
+    //     },1000)
+    // }
+    // for(var i=1; i<=6; i++){
+    //     console.log(fun(i));
+    // }
+   
+//-------------------------------------------------------------
+//find output
+    // for(var i=1;i<=6; i++){
+    //         setTimeout(()=>{
+    //         console.log(i)
+    //     },1000);   
+    // }
+
+//-------------------------------------------------------------
+//closure example-1
+    // function x(){
+    //     var a=7;
+    //     function y(){
+    //         console.log(a);
+    //     }
+    //     return y;
+    // }
+    // var z=x();
+    // console.log(z);
+    // z();
+    //----------------------------------------------------------
+    //closure example-2
+    // function z(){
+    //     var a=900;
+    //     function y(){
+    //         var b=7;
+    //         function x(){
+    //             console.log(a,b);
+    //         }
+    //         x();
+    //     }
+    //     y();
+    // }
+    // z();
+//-------------------------------------------------------
+//closure example-3
+    //  var count=9;
+    function Counter(){
+        var count=0;
+         this.increment=function(){
+            count++;
+            console.log(count)
+        }
+        this.decrement=function(){
+            count--;
+            console.log(count)
+        }
+    }
+    // var a=increment();
+    // a();
+    var counter1=new Counter();
+    counter1.increment;
+    // this.increment.plus
+
+    //----------------------------------------------------
+    //closure example - 4
+//     function makeAdder(x) {
+//   return function (y) {
+//     return x + y;
+//   };
+// }
+
+// const add5 = makeAdder(5);
+// const add10 = makeAdder(10);
+// console.log(add5)
+// console.log(add10)
+// console.log(add5(2)); 
+// console.log(add10(2));
+    </script>
+</body>
+</html>
