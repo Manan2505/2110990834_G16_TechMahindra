@@ -1,9 +1,9 @@
-import React from 'react';
-import useFetch from './hooks/useFetch';
+import React from "react";
+import useFetch from "./hooks/useFetch";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [patients, loading] = useFetch('http://localhost:3001/patients', 10000);
+  const [patients, loading] = useFetch("http://localhost:3001/patients", 10000);
 
   return (
     <div className="container mt-5">
@@ -23,7 +23,7 @@ function App() {
             </tr>
           </thead>
           <tbody>
-            {patients.map(patient => (
+            {patients.map((patient) => (
               <tr key={patient.id}>
                 <td>{patient.id}</td>
                 <td>{patient.name}</td>
