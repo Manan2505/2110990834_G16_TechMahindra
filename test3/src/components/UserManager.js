@@ -13,7 +13,7 @@ const UserManager = ({ data, loading, error, create, updateItem, removeItem }) =
 
   const handleEdit = (id) => {
     const user = data[id];
-    const updated = prompt("Edit name and email (comma-separated)", `${user.name},${user.email}`);
+    const updated = prompt("Edit name and email (comma-separated) ", `${user.name},${user.email}`);
     if (updated) {
       const [name, email] = updated.split(",");
       updateItem(id, { name, email });
